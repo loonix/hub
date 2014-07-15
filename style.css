@@ -1,1 +1,41 @@
-
+.header{
+  background-color:#FFA500;
+  height: 50px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  }
+  
+.emenu{
+  background-color: #472A2A;
+  height: 100%;
+  width: 50px;
+  float:left;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  position: fixed;
+  }
+.dmenu{
+  background-color: #CDD56C;
+  height: 100%;
+  width: 50px;
+  float: right;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  position: static;
+  }
+.content{
+  background-color:#EEEEEE;
+  height:auto;
+  width:auto;
+  float:left;
+}  
+.footer{
+  background-color: #16BDCC;
+  clear:both;
+  text-align:center;
+  height: 50px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
