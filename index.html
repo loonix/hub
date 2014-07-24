@@ -1,46 +1,264 @@
-<html lang="en">
-<head>
-		<meta charset="utf-8">
-		<title>HUB</title>
-		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
-		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-		<link href="style.css" rel="stylesheet">
+<html lang="en-us"><head data-cloud9-id="907">
+<meta charset="utf-8">
+<title>HUB</title>
+<link href="../style.css" rel="stylesheet" type="text/css">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
-<body>`	
+<body>
 
-<div>
+<style>
+    .facebook a,
+	.twitter a,
+	.google-plus a {
+		display: block;
+		width: 100%;
+		color: rgb(75, 110, 168) !important;
+	}
+	.twitter a {
+		color: rgb(79, 213, 248) !important;
+	}
+	.google-plus a {
+		color: rgb(221, 75, 57) !important;
+	}
 	
+	.facebook:hover a {
+		color: rgb(255, 255, 255) !important;
+		background-color: rgb(75, 110, 168) !important;
+	}
+	.twitter:hover a {
+		color: rgb(255, 255, 255) !important;
+		background-color: rgb(79, 213, 248) !important;
+	}
+	.google-plus:hover a {
+		color: rgb(255, 255, 255) !important;
+		background-color: rgb(221, 75, 57) !important;
+	}
 	
-<div class="header">
-<div>Hub</div>
+.tabletesting{
+    background-color = #000;
+}	
+
+
+.esqmenu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+</style>
+
+<div class"top"="" style="
+    top: 0;
+    background-color:#14B9D5;
+    width: 100%;
+    position: fixed;
+    height: 50px;
+    margin: 0;
+    z-index: 2;
+"> topo</div>
+<div class"left"="" style="
+    left: 0;
+    background-color:white;
+    position: fixed;
+    width: 50px;
+    bottom: 50px;
+    top: 50px;
+"> 
+   <table border="0" style="border-color:transparent;border-collapse:collapse;width:300px;height:175" cellpadding="3" cellspacing="3">
+    <tr>
+        <td style="width:45%" colspan="2" rowspan="3"> <div style="background-color:black;width:125px;height:125px;margin-left:2px;margin-top:2px;" src"http://img.talkandroid.com/uploads/2014/06/lg_g_watch_face_06-150x150.png"></img> </td>
+        <td>Name of Artist</td>
+    </tr>
+    <tr>
+        <td>Localization</td>
+    </tr>
+    <tr>
+        <td>Edit Profile</td>
+    </tr>
+    <tr style="width:300px;height:75px;">
+        <td style="width:100px;height:75px;"><span class="fa fa-thumbs-o-up"></span><span class="badge">200</span></td>
+        <td style="width:100px;height:75px;"><span class="fa fa-users"></span><span class="badge">10</span></td>
+        <td style="width:100px;height:75px;"><span class="fa fa-laptop"></span><span class="badge">3</span></td>
+    </tr>
+</table>
+<ul style="width:300px" class="nav nav-pills nav-stacked">
+  <li class="active">
+    <a href="#">
+      <span class="badge pull-right">42</span>
+      Home
+    </a>
+  </li>
+  ...
+</ul>
+ 
+<!--    
+<ul class"esqmenu" style="padding: 0;">
+  <li><a href="#">Home<i class="fa fa-home fa-2x"></i></a></li>
+  <li><a href="#projects">News</a></li>
+  <li><a href="#cenas">Contact</a></li>
+  <li><a href="#portfolio">About</a></li>
+</ul>
+-->
 </div>
-	
-<div class="emenu">
-Menu<br>
-HTML<br>
-CSS<br>
-JavaScript
+<div class"bottom"="" style="
+    bottom: 0;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 50px;     left: 0;     right: 0;     height: 50px;
+    z-index: 2;
+"> 
+<div class="player">
+<table border="1" style="border-color:transparent;border-collapse:collapse;width:100%;height:50px" cellpadding="3" cellspacing="3">
+	<tr>
+		<td style="width:50px"></td>
+		<td align="center" style="width:50px;border-right-color:#ccc"><a href="#"><i class="fa fa-backward "></i></a></td>
+		<td align="center" style="width:50px;border-right-color:#ccc"><a href="#"><i class="fa fa-play"></i></a></td>
+		<td align="center" style="width:50px;border-right-color:#transparent"><a href="#"><i class="fa fa-forward"></i></a></td>
+		<td><img style="max-width:50px;min-width=50px;max-height:50px;min-height:50px; width: 50px;height:50px;top:0;left:0;bottom: 0;margin:0;background-color:black" src"https://irs3.4sqi.net/img/general/50x50/459508_96qAKFV13y0GuFOPLxXixMBRvZaeu0g8-K8-9y4sGho.jpg"></img></td>
+		<td>player</td>
+		<td>settings</td>
+	</tr>
+</table>
+<!--
+    <a href="#"><i class="fa fa-backward "></i></a>
+    <a href="#"><i class="fa fa-play"></i></a>
+    <a href="#"><i class="fa fa-forward"></i></a>
+    <a href="#"><i class="fa fa-random"></i></a>
+    <a href="#"><i class="fa fa-sliders"></i></a>
+    <a href="#"><i class="fa fa-comment"></i></a>
+    <a href="#"><i class="fa fa-cogs"></i></a>
+    <a href="#"><i class="fa fa-cloud-download"></i></a>
+   --> 
 </div>
-
-<div class="dmenu">
-Menu<br>
-HTML<br>
-CSS<br>
-JavaScript
-</div>	
-	
-<div class="content">
-Content goes here</div>
-
-<div class="footer">
-Copyright © HUB</div>
-	
-	
-</div> <!-- container-->
-  
-
     
+    
+</div>
+<div class"content"="" style="
+    background-color:#DADEE7;
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-bottom: 50px;
+    margin-right: 0px;
+    position: static;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+"> 
+     <div class="useritem">
+     
+     <div class"image">
+    <img src="http://successinsaddles.com/wp-content/uploads/2013/09/Select-Show-Horses-Logo-150x150px-150x150.png"></img>
+     </div>
+    <div class"itemcenter">
+     
+        <div class"itemtitle">
+         <h1>TITULO DA MUSICA</h1>
+        </div>
+        <div class"itemdesc">
+         <h6>DESCRICAO DA MUSICA</h6>
+        </div>
+    <div class"itemstats">
+        <i class="fa fa-play">200</i>
+        <i class="fa fa-thumbs-o-up">10</i>
+        <i class="fa fa-comment">10</i>
+        <i class="fa fa-download">10</i>
+    </div>    
+        
+     </div> <!--usercenter-->
+     <div class"itemsocial">
+     <ul>
+		<li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>
+		<li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-twitter"></span></a></li>
+		<li class="google-plus" style="width:33%;"><a href="#google-plus"><span class="fa fa-google-plus"></span></a></li>
+	 </ul>         
+     </div>
+     <div class"itemplayer">
+         player
+     </div>
+     
+     </div>
+         		
+      
+      
+      
+      <table class"tabletesting" border="1" style="background-color:#ccc;border-collapse:collapse;border:1px solid #FFCC00;color:#000000;width:100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td> 
+		<div class"image">
+        <img src="http://successinsaddles.com/wp-content/uploads/2013/09/Select-Show-Horses-Logo-150x150px-150x150.png"></img>
+        </div>
+        </td>
+		<td>
+		    <div class"itemtitle">
+         <h1>TITULO DA MUSICA</h1>
+        </div>
+        <div class"itemdesc">
+         <h6>DESCRICAO DA MUSICA</h6>
+        </div>
+    <div class"itemstats">
+        <i class="fa fa-play"></i><b>200</b>&nbsp
+        <i class="fa fa-thumbs-o-up"></i><b>20</b>&nbsp
+        <i class="fa fa-comment"></i><b>2</b>&nbsp
+        <i class="fa fa-download"></i><b>30</b>
+    </div>    
+        
+     </div> <!--usercenter-->
+		</td>
+		<td>
+		    <div class"itemsocial">
+     <ul>
+		<li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>
+		<li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-twitter"></span></a></li>
+		<li class="google-plus" style="width:33%;"><a href="#google-plus"><span class="fa fa-google-plus"></span></a></li>
+	 </ul>         
+     </div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">Player goes here</td>
+		<td>
+		       <a href="#comment"><span class="fa fa-comment"></span></a>
+		       <a href="#download"><span class="fa fa-download"></span></a>
+		</td>
+	</tr>
+</table>
+      
+         	
+ 
 
-</body></html>
+
+
+</ul> </div> </div>  </div> 
+
+
+
+
+</div> 
+</div>
+	
+	
+	
+  <!--
+<div class"right"="" style="
+    right: 0;
+    background-color: cornflowerblue;
+    width: 50px;
+    top: 50px;
+    bottom: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    position: fixed;
+"> direita</div> 
+-->
+
+
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<script src="/_static/preview/livecss.js"></script><script src="/_static/preview/livecss.js"></script><script src="/_static/preview/livecss.js"></script>
+<script src="/_static/preview/livecss.js"></script><script src="/_static/preview/livecss.js"></script><script src="/_static/preview/livecss.js"></script><script src="/_static/preview/livecss.js"></script><script src="/_static/preview/livecss.js"></script><script src="/_static/preview/livecss.js"></script><script src="/_static/preview/livecss.js"></script></body></html>
