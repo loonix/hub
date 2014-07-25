@@ -2,8 +2,12 @@
 <meta charset="utf-8">
 <title>HUB</title>
 <link href="../style.css" rel="stylesheet" type="text/css">
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+--><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 
@@ -46,6 +50,9 @@
     padding: 0;
 }
 
+
+
+
 </style>
 
 <div class"top"="" style="
@@ -55,15 +62,19 @@
     position: fixed;
     height: 50px;
     margin: 0;
+    right:0;
     z-index: 2;
 "> topo</div>
 <div class"left"="" style="
     left: 0;
     background-color:white;
     position: fixed;
-    width: 50px;
+    width: 300px;
     bottom: 50px;
     top: 50px;
+    border-right-style: solid;
+    border-right-color: #242633;
+    border-right-width: thin;
 "> 
    <table border="0" style="border-color:transparent;border-collapse:collapse;width:300px;height:175" cellpadding="3" cellspacing="3">
     <tr>
@@ -76,21 +87,104 @@
     <tr>
         <td>Edit Profile</td>
     </tr>
-    <tr style="width:300px;height:75px;">
-        <td style="width:100px;height:75px;"><span class="fa fa-thumbs-o-up"></span><span class="badge">200</span></td>
-        <td style="width:100px;height:75px;"><span class="fa fa-users"></span><span class="badge">10</span></td>
-        <td style="width:100px;height:75px;"><span class="fa fa-laptop"></span><span class="badge">3</span></td>
+    <tr style="width:300px;height:75px;table-layout:fixed;">
+        <td style="background-color:#15C1D9;width:33%;height:75px;"><span class="fa fa-thumbs-o-up"></span><span class="badge">200</span></td>
+        <td style="background-color:#EF7A37;width:33%;height:75px;"><span class="fa fa-users"></span><span class="badge">10</span></td>
+        <td style="background-color:#26B3A0;width:33%;height:75px;"><span class="fa fa-laptop"></span><span class="badge">3</span></td>
     </tr>
 </table>
-<ul style="width:300px" class="nav nav-pills nav-stacked">
-  <li class="active">
-    <a href="#">
-      <span class="badge pull-right">42</span>
-      Home
-    </a>
-  </li>
-  ...
-</ul>
+<!-- NAV
+
+                <div class="accordion" id="leftMenu">
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
+                                  <i class="icon-home"></i> Dashboard
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseTwo">
+                                <i class="icon-th"></i> Layout
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="accordion-body collapse" style="height: 0px; ">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>This is one</li>
+                                    <li>This is two</li>
+                                    <li>This is Three</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseThree">
+                                <i class="icon-th-list"></i> UI Components
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="accordion-body collapse" style="height: 0px; ">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>This is one</li>
+                                    <li>This is two</li>
+                                    <li>This is Three</li>
+                                </ul>                 
+                            </div>
+                         </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseFour">
+                                <i class="icon-list-alt"></i> Forms
+                            </a>
+                        </div>
+                        <div id="collapseFour" class="accordion-body collapse" style="height: 0px; ">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>This is one</li>
+                                    <li>This is two</li>
+                                    <li>This is Three</li>
+                                </ul>                 
+                            </div>
+                         </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseFive">
+                                <i class="icon-cog"></i> Plugins
+                            </a>
+                        </div>
+                        <div id="collapseFive" class="accordion-body collapse" style="height: 0px; ">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>This is one</li>
+                                    <li>This is two</li>
+                                    <li>This is Three</li>
+                                </ul>                 
+                            </div>
+                         </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseSix">
+                                <i class="icon-file"></i> Templates
+                            </a>
+                        </div>
+                        <div id="collapseSix" class="accordion-body collapse" style="height: 0px; ">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>This is one</li>
+                                    <li>This is two</li>
+                                    <li>This is Three</li>
+                                </ul>                 
+                            </div>
+                         </div>
+                    </div>
+                </div>
+<!-- NAV -->
  
 <!--    
 <ul class"esqmenu" style="padding: 0;">
@@ -109,19 +203,56 @@
     height: 50px;     left: 0;     right: 0;     height: 50px;
     z-index: 2;
 "> 
-<div class="player">
-<table border="1" style="border-color:transparent;border-collapse:collapse;width:100%;height:50px" cellpadding="3" cellspacing="3">
+<div style="height:50px;" class="player">
+<table style="border-top-color:#383844;border-top-style:dotted;width: 100%;border-top-width:thin;">
+    <tr>
+        <td style="width:50;height:50px" rowspan="2"><img style="max-width:50px;min-width=50px;max-height:50px;min-height:50px; width: 50px;height:50px;top:0;left:0;bottom: 0;margin:0;background-color:black" src"https://irs3.4sqi.net/img/general/50x50/459508_96qAKFV13y0GuFOPLxXixMBRvZaeu0g8-K8-9y4sGho.jpg"></img></td>
+        <td style="width:250;height:25px">Album Name Album Name</td>
+        <td align="center" style="width:50px;border-right-color:#ccc"rowspan="2"><a href="#"><i class="fa fa-backward "></i></a></td>
+        <td align="center" style="width:50px;border-right-color:#ccc" rowspan="2"><a href="#"><i class="fa fa-play"></i></a></td>
+        <td align="center" style="width:50px;border-right-color:#transparent" rowspan="2"><a href="#"><i class="fa fa-forward"></i></a></td>
+        <td>s1</td>
+        <td>s3</td>
+        <td>s5</td>
+    </tr>
+    <tr>
+        <td style="width:250;height:25px">Artist - Track 3:32 Loop</td>
+        <td>s2</td>
+        <td>s4</td>
+        <td>s6</td>
+    </tr>
+</table>
+
+
+
+
+<!--
+<table border="1" style="border-top-color: #242633;border-collapse: collapse;border-bottom-color: transparent;border-left-color: transparent;width:100%;height:50px" cellpadding="0" cellspacing="0">
 	<tr>
-		<td style="width:50px"></td>
+
+		<td style="width:299px">
+		<table STYLE="width:299;height:50px">
+    <tr>
+        <td rowspan="3"><img style="max-width:50px;min-width=50px;max-height:50px;min-height:50px; width: 50px;height:50px;top:0;left:0;bottom: 0;margin:0;background-color:black" src"https://irs3.4sqi.net/img/general/50x50/459508_96qAKFV13y0GuFOPLxXixMBRvZaeu0g8-K8-9y4sGho.jpg"></img></td>
+        <td>album name</td>
+    </tr>
+    <tr>
+        <td>artist - track</td>
+    </tr>
+    <tr>
+        <td>player</td>
+    </tr>
+</table>
+		</td>
 		<td align="center" style="width:50px;border-right-color:#ccc"><a href="#"><i class="fa fa-backward "></i></a></td>
 		<td align="center" style="width:50px;border-right-color:#ccc"><a href="#"><i class="fa fa-play"></i></a></td>
 		<td align="center" style="width:50px;border-right-color:#transparent"><a href="#"><i class="fa fa-forward"></i></a></td>
-		<td><img style="max-width:50px;min-width=50px;max-height:50px;min-height:50px; width: 50px;height:50px;top:0;left:0;bottom: 0;margin:0;background-color:black" src"https://irs3.4sqi.net/img/general/50x50/459508_96qAKFV13y0GuFOPLxXixMBRvZaeu0g8-K8-9y4sGho.jpg"></img></td>
+		<td>sss</td>
 		<td>player</td>
 		<td>settings</td>
 	</tr>
 </table>
-<!--
+<!--	border-top-style: solid;border-top-color: #242633;border-top-width: thin;
     <a href="#"><i class="fa fa-backward "></i></a>
     <a href="#"><i class="fa fa-play"></i></a>
     <a href="#"><i class="fa fa-forward"></i></a>
@@ -141,13 +272,28 @@
     margin-left: 300px;
     margin-bottom: 50px;
     margin-right: 0px;
-    position: static;
+    position: absolute;
     height: auto;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
 "> 
+
+<table style="width:100%;">
+    <tr>
+        <td colspan="3"><input style="width:85%;height:35px;" type="search" class="form-control" placeholder="Search" /></td>
+        <td style="width:15%;height:35px;"><button type="button" class="btn btn-default">Send</button></td>
+    </tr>
+    <tr>
+        <td>o1</td>
+        <td>o2</td>
+        <td>o3</td>
+        <td>o4</td>
+    </tr>
+</table>
+
+
      <div class="useritem">
      
      <div class"image">
@@ -259,6 +405,6 @@
 
 
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-<script src="/_static/preview/livecss.js"></script><script src="/_static/preview/livecss.js"></script><script src="/_static/preview/livecss.js"></script>
-<script src="/_static/preview/livecss.js"></script><script src="/_static/preview/livecss.js"></script><script src="/_static/preview/livecss.js"></script><script src="/_static/preview/livecss.js"></script><script src="/_static/preview/livecss.js"></script><script src="/_static/preview/livecss.js"></script><script src="/_static/preview/livecss.js"></script></body></html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</body>
+</html>
